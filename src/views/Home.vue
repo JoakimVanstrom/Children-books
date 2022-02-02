@@ -12,32 +12,26 @@
     
     <div id="wrapper">
     <h1>Classic Childrens books</h1>
-    <BookList class="all-books" />
+    <BookList class="all-books" :books="books" />
     </div>
   </div>
 </template>
 
 
 <script>
-import books from '../assets/books.json'
+// import books from '../assets/books.json'
 import BookList from '../components/BookList.vue'
 export default {
   components: {BookList},
     data(){return{
-    books: [...books],
-    boks: null
+    // books: [...books],
+    books: []
 }},
 
-provide(){
-  return {
-    books: this.books
-  }
-},
-
 created(){
-  fetch('https://www.abibliadigital.com.br/api/books')
+  fetch('https://gutendex.com/books')
   .then((response) => response.json())
-  .then((data) => (this.boks = data))
+  .then((data) => (this.books = data))
 },
 
 }

@@ -1,6 +1,7 @@
 <template>
   <div>
-      <BookCover v-for="book in books" :key="book.Title" :book="book"/>
+      <!-- <BookCover v-for="book in books" :key="book.Title" :book="book"/> -->
+      <BookCover v-for="book in books.results" :key="book.id" :book="book"/>
   </div>
 </template>
 
@@ -9,7 +10,7 @@
 import BookCover from './BookCover.vue'
 export default {
     components: {BookCover},
-    inject: ['books']
+    props: ['books']
 
 }
 </script>

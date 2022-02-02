@@ -1,8 +1,8 @@
 <template>
 
     <div class="book-cover">
-      <h2>{{book.Title}}</h2>
-      <p>{{book.Author}}</p>
+      <h2>{{book.title}}</h2>
+      <p v-for="author in book.authors" :key="author.name">{{author.name}}</p>
     </div>
 </template>
 
