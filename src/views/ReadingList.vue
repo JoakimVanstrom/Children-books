@@ -1,12 +1,12 @@
 <template>
   <div class="readingList">
      <div class="top">
-       <img @click="viewChange" src="../assets/arrow-left.jpeg" alt="">
+       <img @click="viewChange" src="../assets/left.png" alt="">
      </div>
      <div class="middle">
        <h1>Reading List</h1>
        <div class="container">
-
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, incidunt.</p>
 
        </div>
      </div>
@@ -43,6 +43,7 @@ methods:{
     border-radius: 50%;
     margin-right: 500px;
     margin-bottom: 100px ;
+    background-color: white;
   }
 }
 .middle h1{
