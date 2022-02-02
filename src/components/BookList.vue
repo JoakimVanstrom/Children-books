@@ -9,7 +9,7 @@
 import BookCover from './BookCover.vue'
 export default {
     components: {BookCover},
-    props: ['books']
+    inject: ['books']
 
 }
 </script>
