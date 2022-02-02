@@ -21,14 +21,26 @@ import BookList from '../components/BookList.vue'
 export default {
   components: {BookList},
     data(){return{
-    books: [...books]
+    books: [...books],
+    boks: null
 }},
+
 provide(){
   return {
     books: this.books
   }
+},
+
+created(){
+  fetch('https://www.abibliadigital.com.br/api/books')
+  .then((response) => response.json())
+  .then((data) => (this.boks = data))
+},
+
 }
-}
+
+
+
 
 </script>
 
