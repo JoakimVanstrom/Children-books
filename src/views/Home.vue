@@ -3,8 +3,10 @@
         <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/singlebook">single book</router-link>
+      <router-link to="/singlebook">single book</router-link> |
+      <router-link to="/ReadingList">Reading List</router-link>
     </div>
+    
     <div id="wrapper">
     <h1>Classic Childrens books</h1>
     <BookList class="all-books" />

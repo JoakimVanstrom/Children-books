@@ -17,7 +17,3 @@ export default {
 
 </style>
 
-
-// changePage(){
-//   this.$router.push(/about)
-// }
