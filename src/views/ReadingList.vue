@@ -1,5 +1,5 @@
 <template>
-  <div class="readingList">
+  <div class="reading-list">
      <div class="top">
        <img @click="viewChange" src="../assets/left.png" alt="">
      </div>
@@ -29,7 +29,7 @@ methods:{
 
 <style lang="scss" >
 
-.readingList{
+.reading-list{
   background-color: rgb(27, 27, 27);
   width: 100%;
   height: 900px;
